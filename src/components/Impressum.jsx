@@ -54,7 +54,8 @@ export default function Impressum() {
 
           <h2 className="text-[1.4rem] mt-[2.2rem] mb-[.6rem]">Image credits</h2>
           <p className="max-w-none">
-            Photographs by Koolshooters, Anastasia Ilina-Makarova, Ian Panelo and Tima Miroshnichenko via{' '}
+            Photographs by Koolshooters, Anastasia Ilina-Makarova, Ian Panelo, Tima Miroshnichenko, Ron Lach
+            and Jonathan Borba via{' '}
             <a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer" className="underline-offset-[3px] [overflow-wrap:anywhere]">Pexels</a>.
           </p>
 
