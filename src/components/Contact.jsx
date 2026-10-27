@@ -75,7 +75,7 @@ export default function Contact() {
       />
 
       {/* Map + info + form */}
-      <section className="grid grid-cols-2 gap-3 items-start tab:grid-cols-1 py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
+      <section data-reveal className="grid grid-cols-2 gap-3 items-start tab:grid-cols-1 py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
         <div>
           <Map />
           <dl className="mt-[1.4rem] grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] gap-4">
@@ -158,7 +158,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ */}
-      <section className="rounded-[28px] p-[clamp(1.25rem,3vw,2.4rem)] bg-butter mob:rounded-[22px]">
+      <section data-reveal className="rounded-[28px] p-[clamp(1.25rem,3vw,2.4rem)] bg-butter mob:rounded-[22px]">
         <h2>Frequently asked questions</h2>
         <div className="max-w-[820px] mt-[1.2rem]">
           {FAQ.map(([q, a]) => (

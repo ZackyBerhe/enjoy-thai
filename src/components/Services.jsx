@@ -1,6 +1,5 @@
-import { GROUPS, PACKAGES, TREATMENTS } from '../data';
+import { GROUPS, PACKAGES, TREATMENTS, imgFor } from '../data';
 import Banner from './Banner';
-import GrayBox from './GrayBox';
 import Pill from './Pill';
 import PriceChips from './PriceChips';
 import PackageRow from './PackageRow';
@@ -15,7 +14,7 @@ export default function Services() {
       />
 
       {/* Service groups */}
-      <section className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
+      <section data-reveal className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
         {GROUPS.map(([name, desc], gi) => (
           <div key={name} className="mb-12">
             <h2 className="mb-[.4rem]">{name}</h2>
@@ -26,7 +25,7 @@ export default function Services() {
                 className="grid grid-cols-[150px_1fr_1.1fr] gap-x-8 gap-y-[1.2rem] items-center py-[1.2rem] border-t border-line mob:grid-cols-[84px_1fr]"
               >
                 <div className="h-[110px] rounded-[16px] overflow-hidden mob:h-[84px]">
-                  <GrayBox className="block w-full h-full" />
+                  <img src={imgFor(t)} alt="" loading="lazy" className="block w-full h-full object-cover" />
                 </div>
                 <div>
                   <h3>{t.f || t.n}</h3>
@@ -43,7 +42,7 @@ export default function Services() {
       </section>
 
       {/* Indulgence packages */}
-      <section className="rounded-[28px] p-[clamp(1.25rem,3vw,2.4rem)] bg-butter mob:rounded-[22px]">
+      <section data-reveal className="rounded-[28px] p-[clamp(1.25rem,3vw,2.4rem)] bg-butter mob:rounded-[22px]">
         <h2>Indulgence packages</h2>
         <p className="mt-[.7rem] mb-[1.2rem]">
           These wellness programmes let you be pampered from head to toe. All packages last 90 minutes.

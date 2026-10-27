@@ -81,7 +81,7 @@ export default function Candles() {
 
   return (
     <div
-      className="fixed right-[max(12px,env(safe-area-inset-right))] bottom-[max(8px,env(safe-area-inset-bottom))] w-[clamp(84px,11vw,150px)] z-20 pointer-events-none mob:w-[78px]"
+      className="fixed right-[max(12px,env(safe-area-inset-right))] bottom-[max(8px,env(safe-area-inset-bottom))] w-[clamp(112px,14vw,195px)] z-20 pointer-events-none mob:w-[104px]"
       aria-hidden="true"
     >
       <svg ref={svgRef} viewBox="0 0 240 230" className="block w-full h-auto overflow-visible">

@@ -12,7 +12,7 @@ export default function Impressum() {
     <div>
       <Banner size="sm" title="Legal Notice" />
 
-      <section className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
+      <section data-reveal className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
         <div className="bg-white rounded-[28px] p-[clamp(1.25rem,4vw,3rem)] max-w-[900px] mx-auto mob:rounded-[22px]">
           <h2 className="text-[1.4rem] mt-[2.2rem] mb-[.6rem] first:mt-0">Information pursuant to § 5 DDG</h2>
           <p className="max-w-none">

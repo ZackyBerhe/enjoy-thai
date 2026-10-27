@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { TREATMENTS } from '../data';
-import GrayBox from './GrayBox';
+import { TREATMENTS, imgFor } from '../data';
 import Pill from './Pill';
 import PriceChips from './PriceChips';
 import { PrevIcon, NextIcon } from './Icons';
@@ -23,6 +22,7 @@ export default function TreatmentsWidget() {
 
   return (
     <section
+      data-reveal
       className="bg-white rounded-[28px] p-[clamp(1.1rem,3vw,2.2rem)] mob:rounded-[22px]"
       aria-label="Treatments"
     >
@@ -57,7 +57,7 @@ export default function TreatmentsWidget() {
 
       <div className="grid grid-cols-[1.55fr_1fr] gap-[clamp(1.2rem,3vw,3rem)] items-stretch tab:grid-cols-1">
         <div className="relative rounded-[20px] overflow-hidden min-h-[320px] bg-butter tab:min-h-0 tab:aspect-[16/10]">
-          <GrayBox label={t.n} className="absolute inset-0" />
+          <img key={t.n} src={imgFor(t)} alt={t.n} className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute right-[14px] bottom-[14px] flex gap-2">
             <button
               type="button"

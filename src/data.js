@@ -1,5 +1,25 @@
 // Data translated from the original page (prices from brochure).
 
+// Site photographs (Pexels), resized for web and served from /public/images.
+// The banner cross-fades through all of them in this order.
+export const IMAGES = [
+  'images/pexels-anastasia-ilina-makarova-140436704-14187889.jpg',
+  'images/pexels-koolshooters-6628693.jpg',
+  'images/pexels-tima-miroshnichenko-6187653.jpg',
+  'images/pexels-koolshooters-6628646.jpg',
+  'images/pexels-ian-panelo-37719545.jpg',
+  'images/pexels-koolshooters-6628701.jpg',
+  'images/pexels-tima-miroshnichenko-6187652.jpg',
+  'images/pexels-tima-miroshnichenko-6187657.jpg',
+  'images/pexels-tima-miroshnichenko-6187418.jpg',
+  'images/pexels-koolshooters-6628601.jpg',
+  'images/pexels-ron-lach-9146381.jpg',
+  'images/pexels-jonathanborba-19666192.jpg',
+];
+
+// Photo for a treatment, chosen by its legacy image key (t.i).
+export const imgFor = (t) => IMAGES[{ a: 1, t: 3, o: 6, h: 8, f: 11 }[t.i] ?? 0];
+
 // Treatments. g: group index (0 = Massages, 1 = Spa), i: image key (legacy).
 export const TREATMENTS = [
   {

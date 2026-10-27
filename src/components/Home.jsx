@@ -1,6 +1,5 @@
-import { BENEFITS, PACKAGES, STEPS } from '../data';
+import { BENEFITS, IMAGES, PACKAGES, STEPS } from '../data';
 import Banner from './Banner';
-import GrayBox from './GrayBox';
 import Pill from './Pill';
 import PackageRow from './PackageRow';
 import TreatmentsWidget from './TreatmentsWidget';
@@ -8,7 +7,7 @@ import TreatmentsWidget from './TreatmentsWidget';
 // Indulgence packages + gift card (.duo).
 function Duo() {
   return (
-    <section className="grid grid-cols-[1.2fr_1fr] gap-3 tab:grid-cols-1">
+    <section data-reveal className="grid grid-cols-[1.2fr_1fr] gap-3 tab:grid-cols-1">
       <div className="rounded-[28px] p-[clamp(1.25rem,3vw,2.4rem)] bg-butter mob:rounded-[22px]">
         <h2>Indulgence packages</h2>
         <p className="mt-[.7rem] mb-4">From head to toe. Afterwards you will feel brand new.</p>
@@ -43,9 +42,9 @@ function Duo() {
 // Dark contact block (.dark / .three).
 function DarkContact() {
   return (
-    <section className="py-[clamp(2.5rem,7vw,5.5rem)]">
+    <section data-reveal className="py-[clamp(2.5rem,7vw,5.5rem)]">
       <div className="relative isolate overflow-hidden rounded-[28px] text-white text-center py-[clamp(2rem,6vw,5rem)] px-[clamp(1rem,4vw,3rem)] mob:rounded-[22px]">
-        <GrayBox className="absolute inset-0 -z-[2]" />
+        <img src={IMAGES[6]} alt="" aria-hidden="true" className="absolute inset-0 -z-[2] w-full h-full object-cover" />
         <div className="absolute inset-0 -z-[1] bg-[rgba(46,33,24,.82)]" />
         <h2 className="text-[clamp(1.7rem,4vw,3rem)] max-w-[22ch] mx-auto mb-[.6rem]">Write to us, call, or drop by.</h2>
         <p className="mt-0 mb-8 mx-auto opacity-[.85]">In the heart of Bad Endorf, yet a place where things instantly feel calmer.</p>
@@ -103,7 +102,7 @@ export default function Home() {
       </Banner>
 
       {/* About */}
-      <section className="grid grid-cols-[1fr_1.3fr] items-start gap-[clamp(1.5rem,6vw,5rem)] tab:grid-cols-1 py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
+      <section data-reveal className="grid grid-cols-[1fr_1.3fr] items-start gap-[clamp(1.5rem,6vw,5rem)] tab:grid-cols-1 py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
         <div>
           <h2 className="text-[1.8rem]">About us</h2>
           <p className="text-muted mt-4 text-[.92rem]">
@@ -133,7 +132,7 @@ export default function Home() {
       <TreatmentsWidget />
 
       {/* How your visit works */}
-      <section className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
+      <section data-reveal className="py-[clamp(2.5rem,7vw,5.5rem)] px-[clamp(.25rem,3vw,2.5rem)]">
         <div className="mb-[1.6rem]">
           <h2>How your visit works</h2>
         </div>
